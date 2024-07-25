@@ -963,8 +963,7 @@ copy_files_or_dirs_from_list() {
             if [ "$osname" = "linux-musl" ]; then
                 printf -- "-u";
             else
-                # printf -- "-n";
-                printf -- "--update=none";
+                printf -- "-n";
             fi
         fi)
 
